@@ -25,6 +25,10 @@ pool.query(`
   else console.log('✅ Users table ready');
 });
 
+app.get("/",(req,res)=>{
+    res.json("hello");
+})
+
 // ➕ Create
 app.post('/users', async (req, res) => {
   const { name, email } = req.body;
