@@ -1,11 +1,10 @@
-const express = require("express");
+const express = require('express');
 const app = express();
-const serverless = require("serverless-http");
 
-app.use(express.json());
-
-app.get("/", (req, res) => {
-    res.json("Hello from API server !!!");
+// Simple GET endpoint
+app.get('/api/hello', (req, res) => {
+  res.json({ message: 'Hello from Express on Vercel!' });
 });
 
-module.exports.handler = serverless(app);
+// Export the app as a Vercel serverless function
+module.exports = app;
