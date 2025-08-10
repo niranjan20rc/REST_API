@@ -1,12 +1,11 @@
 const express = require("express");
-const app =express();
-
+const app = express();
+const serverless = require("serverless-http");
 
 app.use(express.json());
 
+app.get("/", (req, res) => {
+    res.json("Hello from API server !!!");
+});
 
-app.get("/",(res,res)=>{
-    res.json("Hell from API server !!!");
-})
-
-app.listen(5000,()=>console.log("server is running !!!"))
+module.exports.handler = serverless(app);
