@@ -26,7 +26,7 @@ pool.query(`
 });
 
 app.get("/",(req,res)=>{
-    res.json("hello");
+    res.json("hello world");
 })
 
 // ➕ Create
