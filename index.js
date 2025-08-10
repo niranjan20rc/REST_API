@@ -92,7 +92,6 @@ app.delete('/users/:id', async (req, res) => {
 
 module.exports = app;
 
-
 /*
 
 MONGO_URI=mongodb+srv://niranjancse2023:niranjan2005@cluster0.tmh1gke.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
