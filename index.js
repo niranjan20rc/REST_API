@@ -6,7 +6,6 @@ const bodyParser = require('body-parser');
 const app = express();
 const port = 3000;
 
-// ✅ Replace with your actual Neon PostgreSQL connection string
 const pool = new Pool({
   connectionString:"postgresql://neondb_owner:npg_el0DmtUZvHO2@ep-frosty-paper-aerxi47x-pooler.c-2.us-east-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
 });
